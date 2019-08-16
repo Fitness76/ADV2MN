@@ -223,6 +223,7 @@ rpcport=$rpcport
 listen=0
 server=1
 daemon=1
+staking=0
 maxconnections=64
 externalip=$public_ip
 masternode=1
