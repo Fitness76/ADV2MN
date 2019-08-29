@@ -1,5 +1,5 @@
 #!/bin/bash
-# ADevplus20 Masternode generate ipv6 address  V1.1 for Ubuntu 16.04 ,18.04.
+# ADevplus20 node generate ipv6 address  V1.1 for Ubuntu 16.04 ,18.04.
 #
 # Script will attempt to generate a public IPV6 address
 # and add the address to Network interface 
@@ -96,10 +96,10 @@ fi
 
 
 echo -e "${GREEN}This IPV6 Address will be use for next Masternode install :\n $MNIP ${NC}"
-read -p "Continue to bash ADevplus20_Master_setup_ipv6.sh  (y/n)?  " CONT
+read -p "Continue to bash ADevplus20_Masternode_setup_ipv6.sh  (y/n)?  " CONT
    if [ "$CONT" = "y" ]; then
       # Start a new install 
-      bash ADV2_Masternode_setup_ipv6.sh;
+      bash ADV2_Masternodenode_setup_ipv6.sh;
    else
       exit 0;
    fi
