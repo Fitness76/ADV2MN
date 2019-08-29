@@ -172,7 +172,7 @@ elif  [[ `lsb_release -rs` == "18.04" ]]
 then
 sudo cp $PWD/ADV2_Masternode_setup/new_adv2_daemon_18/adevplus20* /usr/bin/  
 elif  [[ `lsb_release -rs` == "18.10" ]] 
-fi
+
 sudo chmod 755 -R $PWD/ADV2_Masternode_setup
 sudo chmod 755 /usr/bin/adevplus20*
 
