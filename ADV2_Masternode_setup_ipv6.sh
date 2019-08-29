@@ -167,17 +167,17 @@ stop_daemon
 # Deploy binaries to /usr/bin
 if [[ `lsb_release -rs` == "16.04" ]] 
 then
-sudo cp $PWD/ADV2_Master_setup/new_adv2_daemon_16/adevplus20* /usr/bin/  
+sudo cp $PWD/ADV2_Masternode_setup/new_adv2_daemon_16/adevplus20* /usr/bin/  
 elif  [[ `lsb_release -rs` == "18.04" ]] 
 then
-sudo cp $PWD/ADV2_Master_setup/new_adv2_daemon_18/adevplus20* /usr/bin/  
+sudo cp $PWD/ADV2_Masternode_setup/new_adv2_daemon_18/adevplus20* /usr/bin/  
 elif  [[ `lsb_release -rs` == "18.10" ]] 
 fi
-sudo chmod 755 -R $PWD/ADV2_Master_setup
+sudo chmod 755 -R $PWD/ADV2_Masternode_setup
 sudo chmod 755 /usr/bin/adevplus20*
 
 # Deploy masternode monitoring script
-sudo cp $PWD/ADV2_Master_setup/nodemon.sh /usr/local/bin
+sudo cp $PWD/ADV2_Masternode_setup/nodemon.sh /usr/local/bin
 sudo chmod 711 /usr/local/bin/nodemon.sh
 
 #Create adevplus20 datadir
