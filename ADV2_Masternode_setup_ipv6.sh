@@ -101,14 +101,10 @@ sudo apt-get -y install libevent-dev
 
 sudo apt -y install software-properties-common
 
-if [[ $(lsb_release -rs) < "19.04" ]]; then
-
-else
 sudo apt install -y libdb5.3-dev 
 sudo apt install -y libdb5.3++-dev 
 wget http://ftp.nl.debian.org/debian/pool/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u8_amd64.deb
 sudo dpkg -i libssl1.0.0_1.0.1t-1+deb8u8_amd64.deb
-fi
 
 
 sudo apt-get -y install libminiupnpc-dev
